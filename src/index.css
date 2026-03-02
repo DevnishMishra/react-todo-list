@@ -13,3 +13,7 @@
   justify-content: space-between;
   margin-top: 10px;
 }
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
