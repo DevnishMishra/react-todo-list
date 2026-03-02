@@ -34,6 +34,15 @@ function App() {
     });
     setTasks(updatedTasks);
   } 
+  const editTask = (id, newText) => {
+  setTasks(
+    tasks.map(task =>
+      task.id === id
+        ? { ...task, text: newText }
+        : task
+    )
+  );
+};
   return (
     <div className="container">
       <Header />
@@ -43,7 +52,12 @@ function App() {
         <button onClick={addTask}>Add</button>
       </div>
 
-      <ToDoList tasks={tasks} deleteTask={deleteTask} toggleTaskCompletion={toggleTaskCompletion} />
+      <ToDoList tasks={tasks} 
+      deleteTask={deleteTask} 
+      toggleTaskCompletion={toggleTaskCompletion}
+      editTask={editTask}
+      
+      />
     </div>
   );
 }
