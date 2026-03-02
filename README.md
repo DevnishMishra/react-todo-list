@@ -7,5 +7,9 @@
 - Edit Task
 
 ## How to Run
-1. npm install
-2. npm run dev
+ 1.Clone the repository
+
+git clone https://github.com/your-username/react-todo-app.git
+2.Install dependencies
+npm install
+3.npm run dev(start dev server)
